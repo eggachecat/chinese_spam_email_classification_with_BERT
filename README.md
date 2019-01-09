@@ -17,16 +17,13 @@
 - Tensorflow >= 1.10
 - 在tmp解压缩raw_data
     - 这是数据集(为什么这个git这么大的原因之一..)
-    - 在main.py中
-```python
-way = EasyWay()
-# 转换数据
-way.transform_data()
-# 训练 或者使用 git中已经附了训练好的模型
-# way.train()
-# 测试
-way.test()
-```
+
+### 在main.py中
+- `way.transform_data()`用来把文本转成BERT的encoding
+
+- `way.train()`用来把转化好的训练(git中以及附上训练好的,可以跳过)
+
+- `way.test()`用来测试
 
 ### Implementation
 #### training
